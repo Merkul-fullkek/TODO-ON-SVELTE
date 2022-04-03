@@ -22,12 +22,12 @@
 	<div class:done={todo.done}>
 		<input
 				type=checkbox
-				checked={todo.done}
+				bind:checked={todo.done}
 		>
 
 		<input
 				placeholder="Что надо сделать?"
-				value={todo.text}
+				bind:value={todo.text}
 		>
 	</div>
 {/each}
